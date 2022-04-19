@@ -17,7 +17,7 @@ namespace TesteDocker.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public string Get()
         {
-            return "Oi";
+            return "Olá, mundo!";
         }
     }
 }
