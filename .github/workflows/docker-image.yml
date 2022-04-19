@@ -1,5 +1,9 @@
 name: dotnet-docker-heroku CD
 
+defaults:
+  run:
+    working-directory: TesteDocker
+
 on:
   push:
     branches: [ main ]
