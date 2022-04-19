@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
     
+defaults:
+  run:
+    working-directory: TesteDocker
+    
 #set environment variables
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
