@@ -17,7 +17,11 @@ namespace TesteDocker.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public string Get()
         {
-            return "Olá, mundo!!!!!";
+            var weatherForecast = new WeatherForecast()
+            {
+                Date = DateTime.Now
+            };
+            return weatherForecast.Date.ToString();
         }
     }
 }
